@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--margin-->
+    <dimen name="rcview_divider_height">1dp</dimen>
+    <dimen name="button_margin">5dp</dimen>
+
+    <!--textsize-->
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="normal_text">14sp</dimen>
+    <dimen name="large_text">18sp</dimen>
+    <dimen name="xlarge_text">30sp</dimen>
+
+    <!--vedio-->
+    <dimen name="vedio_height">200dp</dimen>
+    <dimen name="vedio_center_play_button">50dp</dimen>
+    <dimen name="vedio_button_margin">10dp</dimen>
+    <dimen name="vedio_back_size">20dp</dimen>
+    <dimen name="vedio_bottom_actionbar_size">30dp</dimen>
+</resources>

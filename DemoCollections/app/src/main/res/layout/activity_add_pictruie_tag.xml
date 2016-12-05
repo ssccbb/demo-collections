@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_pictruie_tag"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sung.demo.democollections.PcitrueTAG.AddPictruieTag">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TextView
+                android:text="原图"
+                android:alpha="0.4"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/large_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/origomal_pic"
+                android:background="@color/disable"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:text="从相册中选取图片"
+            android:textSize="@dimen/normal_text"
+            android:id="@+id/choose_pic"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/hint_scroll"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="top"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_width="match_parent"
+                android:id="@+id/progress_text"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@android:drawable/editbox_background"
+                    android:focusable="true"
+                    android:id="@+id/water_mark_text"
+                    android:hint="水印文字"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/button_margin"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="@dimen/button_margin"
+                android:textSize="@dimen/normal_text"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="添加水印文字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_text" />
+            <TextView
+                android:padding="@dimen/button_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/normal_text"
+                android:text="添加时间戳"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_time" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TextView
+                android:text="水印图"
+                android:alpha="0.4"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/large_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/water_mark_pic"
+                android:background="@color/disable"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

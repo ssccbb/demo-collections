@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">demo合集</string>
+    <string name="activity_iamge_choose">选择图片</string>
+    <string name="categeroy_hint">点击弹出分类展示列表,列表最大层级3级</string>
+
+    <string name="activity_pictrue_tag">图片水印生成</string>
+    <string name="activity_video_barrge">弹幕视频</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

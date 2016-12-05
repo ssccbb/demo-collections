@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center"
+    android:id="@+id/text"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:textColor="@color/text_disable"
+    android:paddingTop="@dimen/vedio_button_margin"
+    android:paddingBottom="@dimen/vedio_button_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

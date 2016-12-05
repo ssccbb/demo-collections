@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shortvedio_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sung.demo.democollections.ShortVedioRecord.ShortVedioRecord">
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="@dimen/vedio_bottom_actionbar_size"
+        android:textSize="@dimen/xlarge_text"
+        android:textColor="@color/text_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短视频录制"/>
+
+    <LinearLayout
+        android:padding="@dimen/button_margin"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hint"
+            android:hint="暂无已录制的短视频"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="预览"
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="开始录制"
+                android:id="@+id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

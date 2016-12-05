@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/src/main/jniLibs"><file name="armeabi-v7a/libutility.so" path="/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/src/main/jniLibs/armeabi-v7a/libutility.so"/></source></dataSet><dataSet config="debug"><source path="/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/src/debug/jniLibs"/></dataSet></merger>

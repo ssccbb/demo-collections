@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable/record_camera_switch_selector.xml",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable/record_camera_switch_selector.xml"
+    },
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable/record_next_seletor.xml",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable/record_next_seletor.xml"
+    },
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable/record_delete_selector.xml",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable/record_delete_selector.xml"
+    },
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable/record_camera_flash_led_selector.xml",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable/record_camera_flash_led_selector.xml"
+    },
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable/small_video_shoot.xml",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable/small_video_shoot.xml"
+    }
+]
