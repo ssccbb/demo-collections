@@ -4,7 +4,7 @@
     android:id="@+id/activity_vedio_view_play"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sung.demo.democollections.VideoAndBarrage.VideoViewPlay">
+    tools:context="com.sung.demo.democollections.VideoAndBarrage.view.VideoViewPlay">
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"

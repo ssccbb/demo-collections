@@ -1,16 +1,9 @@
-package com.sung.demo.democollections.VideoAndBarrage.MediaHelper;
+package com.sung.demo.democollections.VideoAndBarrage.mediaHelper;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
-import android.os.Build;
 import android.util.Log;
 import android.view.SurfaceView;
-import android.view.ViewGroup;
-import android.view.Window;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 import io.vov.vitamio.widget.CenterLayout;
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">demo合集</string>
+    <string name="app_name">SmartPlayerSDKDemo</string>
     <string name="activity_iamge_choose">选择图片</string>
     <string name="categeroy_hint">点击弹出分类展示列表,列表最大层级3级</string>
 
@@ -8,4 +8,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--calendar-->
+    <string name="calendar_list">日历+listview</string>
+    <string name="calendar_scroll">日历+scrollview</string>
+    <string name="calendar_des">* 仿美柚app日历记录功能，默认选中当天日期，左右滑动切换月份，上下滑动收缩/展开日历。</string>
 </resources>

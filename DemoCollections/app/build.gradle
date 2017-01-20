@@ -5,6 +5,7 @@ android {
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "com.sung.demo.democollections"
+        multiDexEnabled true
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -15,6 +16,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
         }
     }
 }
@@ -34,4 +40,10 @@ dependencies {
     compile project(':easeui')
     //    shortvedio
     compile project(':SmallVideoLib')
+    compile files('libs/AMap_Location_V3.2.0_20161205.jar')
+    compile files('libs/Android_Map3D_SDK_V4.1.3_20161208.jar')
+    compile files('libs/AMap_Search_V3.6.1_20161122.jar')
+    compile files('libs/smartavengine.jar')
+    
+    compile 'com.github.ctiao:dfm:0.4.2'
 }

@@ -1,96 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_video_play"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    tools:context="com.sung.demo.democollections.VideoAndBarrage.view.VideoPlay"
     android:layout_height="match_parent"
-    tools:context="com.sung.demo.democollections.VideoAndBarrage.VideoPlay">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <io.vov.vitamio.widget.CenterLayout
-            android:id="@+id/surface_container"
-            android:background="@android:color/black"
+    android:layout_width="match_parent">
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:id="@+id/activity_video_play"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/vedio_height"
-            android:orientation="vertical" >
-
-            <SurfaceView
-                android:id="@+id/surface"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center" >
-            </SurfaceView>
-        </io.vov.vitamio.widget.CenterLayout>
-        <ImageView
-            android:id="@+id/first_frame"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/vedio_height" />
-        <ImageView
-            android:layout_centerInParent="true"
-            android:src="@drawable/mp_play_normal"
-            android:alpha="0.7"
-            android:scaleType="fitCenter"
-            android:layout_width="@dimen/vedio_center_play_button"
-            android:layout_height="@dimen/vedio_center_play_button"
-            android:id="@+id/play" />
-
-        <RelativeLayout
-            android:alpha="0.7"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/vedio_height"
-            android:id="@+id/control_ui">
-            <ImageView
-                android:layout_margin="@dimen/vedio_button_margin"
-                android:src="@drawable/mp_back_normal"
-                android:layout_width="@dimen/vedio_back_size"
-                android:layout_height="@dimen/vedio_back_size"
-                android:id="@+id/vedio_back" />
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_alignParentBottom="true"
+            android:layout_height="match_parent">
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:background="#50f5f5f5"
-                android:gravity="center_vertical"
-                android:layout_height="@dimen/vedio_bottom_actionbar_size">
-                <android.support.v7.widget.AppCompatSeekBar
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    style="@style/Widget.AppCompat.SeekBar"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/vedio_seekbar" />
-                <TextView
-                    android:layout_marginLeft="@dimen/button_margin"
-                    android:layout_marginRight="@dimen/button_margin"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/vedio_fulltime" />
+                android:layout_height="wrap_content">
+                <io.vov.vitamio.widget.CenterLayout
+                    android:id="@+id/surface_container"
+                    android:background="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vedio_height"
+                    android:orientation="vertical" >
+
+                    <SurfaceView
+                        android:id="@+id/surface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+                    </SurfaceView>
+                </io.vov.vitamio.widget.CenterLayout>
+                <master.flame.danmaku.ui.widget.DanmakuView
+                    android:id="@+id/danmakuView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vedio_height"/>
                 <ImageView
-                    android:id="@+id/full_player"
+                    android:id="@+id/first_frame"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vedio_height" />
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mp_play_normal"
+                    android:alpha="0.7"
+                    android:scaleType="fitCenter"
+                    android:layout_width="@dimen/vedio_center_play_button"
+                    android:layout_height="@dimen/vedio_center_play_button"
+                    android:id="@+id/play" />
+
+                <RelativeLayout
+                    android:alpha="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vedio_height"
+                    android:id="@+id/control_ui">
+                    <ImageView
+                        android:layout_margin="@dimen/vedio_button_margin"
+                        android:src="@drawable/mp_back_normal"
+                        android:layout_width="@dimen/vedio_back_size"
+                        android:layout_height="@dimen/vedio_back_size"
+                        android:id="@+id/vedio_back" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:background="#50f5f5f5"
+                        android:gravity="center_vertical"
+                        android:layout_height="@dimen/vedio_bottom_actionbar_size">
+                        <android.support.v7.widget.AppCompatSeekBar
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            style="@style/Widget.AppCompat.SeekBar"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vedio_seekbar" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/button_margin"
+                            android:layout_marginRight="@dimen/button_margin"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vedio_fulltime" />
+                        <ImageView
+                            android:id="@+id/full_player"
+                            android:layout_margin="@dimen/button_margin"
+                            android:src="@drawable/mp_square_fullscreen_normal"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
                     android:layout_margin="@dimen/button_margin"
-                    android:src="@drawable/mp_square_fullscreen_normal"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp" />
+                    android:paddingTop="@dimen/vedio_button_margin"
+                    android:id="@+id/play_uri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
-        </RelativeLayout>
-    </RelativeLayout>
+
+            <Button
+                android:id="@+id/vedio_view"
+                android:text="转到VEDIOVIEW横屏在线播放"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white_deep_bg"
+        android:gravity="center_vertical"
+        android:paddingRight="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_margin="@dimen/button_margin"
-            android:paddingTop="@dimen/vedio_button_margin"
-            android:id="@+id/play_uri"
-            android:layout_width="match_parent"
+        <EditText
+            android:textSize="@dimen/normal_text"
+            android:hint="戳我发送弹幕一起互动吧"
+            android:layout_margin="5dp"
+            android:id="@+id/edit_comment"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@android:drawable/editbox_background_normal"
             android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="@dimen/normal_text"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_comment" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/vedio_view"
-        android:text="转到VEDIOVIEW横屏在线播放"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+</RelativeLayout>

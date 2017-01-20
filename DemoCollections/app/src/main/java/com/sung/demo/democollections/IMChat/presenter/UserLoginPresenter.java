@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Handler;
 import android.util.Log;
 
+import com.hyphenate.chat.EMChatManager;
+import com.hyphenate.chat.EMClient;
 import com.sung.demo.democollections.IMChat.model.IUserLogin;
 import com.sung.demo.democollections.IMChat.model.OnLogoutListener;
 import com.sung.demo.democollections.IMChat.model.OnRegistListener;
@@ -123,5 +125,9 @@ public class UserLoginPresenter {
 
     public void toChatFriend(Activity context,String friName){
         mIUserLogin.toChatFriend(context, friName);
+    }
+
+    public boolean isLogin(){
+        return EMClient.getInstance().isLoggedInBefore();
     }
 }

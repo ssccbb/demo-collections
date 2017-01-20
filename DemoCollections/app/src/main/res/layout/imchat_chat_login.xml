@@ -62,12 +62,19 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/msglist" />
             <TextView
-                android:text="和好友聊天"
+                android:text="和sung1聊天"
                 android:textColor="@color/colorPrimary"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/chat" />
+            <TextView
+                android:id="@+id/chat_to"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/button_margin"
+                android:text="指定聊天"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
     <ScrollView

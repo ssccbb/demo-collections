@@ -10,16 +10,39 @@
     <!-- IMChat -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- amap -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <!-- <uses-permission android:name="android.permission.INTERNET"></uses-permission> -->
+    <!-- 用于读取手机当前的状态 -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> -->
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:name=".App"
@@ -46,16 +69,16 @@
             android:name=".PcitrueTAG.AddPictruieTag"
             android:label="@string/activity_pictrue_tag" />
         <activity
-            android:name=".VideoAndBarrage.VideoPlay"
+            android:name=".VideoAndBarrage.view.VideoPlay"
             android:label="@string/activity_video_barrge"
             android:launchMode="singleInstance" />
         <activity android:name=".PcitrueTAG.ImageBrowsing" />
         <activity
-            android:name=".VideoAndBarrage.VideoViewPlay"
+            android:name=".VideoAndBarrage.view.VideoViewPlay"
             android:launchMode="singleTask"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".VideoAndBarrage.VedioPlayLandscape"
+            android:name=".VideoAndBarrage.view.VedioPlayLandscape"
             android:launchMode="singleInstance"
             android:screenOrientation="landscape" />
 
@@ -70,9 +93,11 @@
         <activity android:name=".IMChat.view.ChatMsgList" />
         <activity android:name=".IMChat.view.SingleChatAct" />
         <!-- 设置环信应用的AppKey -->
+        <!--android:value="91110105ma001jtb9k#nbp-merchant" sung-->
+        <!--android:value="1188170105115513#nbp"-->
         <meta-data
             android:name="EASEMOB_APPKEY"
-            android:value="91110105ma001jtb9k#nbp-merchant" />
+            android:value="91110105ma001jtb9k#nbp-merchant"/>
         <!-- 声明SDK所需的service SDK核心功能 -->
         <service
             android:name="com.hyphenate.chat.EMChatService"
@@ -100,8 +125,45 @@
         <activity
             android:name="mabeijianxi.camera.MediaRecorderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ShortVedioRecord.VideoPlayerActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".ShortVedioRecord.VideoPlayerActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <!-- 日历签到 -->
+        <activity
+            android:name=".CalendarSign.CalendarSign"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".CalendarSign.CalendarListViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".CalendarSign.CalendarScrollViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- AMapLocation -->
+        <activity
+            android:name=".AMapGaode.AMapLocation"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b738f70adbc08d0c33d269db7c4dba16" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- Gyroscope -->
+        <activity
+            android:name=".Gyroscope.Gyroscope"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--live radio-->
+        <activity android:name=".LiveRadio.SmartPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
     </application>
 
 </manifest>

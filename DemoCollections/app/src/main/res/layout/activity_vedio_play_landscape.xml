@@ -4,7 +4,7 @@
     android:id="@+id/activity_vedio_play_landscape"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sung.demo.democollections.VideoAndBarrage.VedioPlayLandscape">
+    tools:context="com.sung.demo.democollections.VideoAndBarrage.view.VedioPlayLandscape">
     <io.vov.vitamio.widget.CenterLayout
         android:id="@+id/surface_container"
         android:background="@android:color/black"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imservice_custom_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sung.demo.democollections.CustomService.CustomService">
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="@dimen/vedio_bottom_actionbar_size"
+        android:textSize="@dimen/xlarge_text"
+        android:textColor="@color/text_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="环信IM移动客服"/>
+</RelativeLayout>

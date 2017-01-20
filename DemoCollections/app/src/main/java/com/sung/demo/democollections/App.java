@@ -105,7 +105,7 @@ public class App extends Application{
         } else {
             VCamera.setVideoCachePath(dcim + "/com.sung.demo.shortvedio/");
         }
-        VCamera.setDebugMode(true);
+        VCamera.setDebugMode(false);
         VCamera.initialize(context);
     }
 }

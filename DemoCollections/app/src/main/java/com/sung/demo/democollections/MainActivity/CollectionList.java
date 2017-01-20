@@ -7,15 +7,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.sung.demo.democollections.AMapGaode.AMapLocation;
 import com.sung.demo.democollections.App;
+import com.sung.demo.democollections.CalendarSign.CalendarSign;
 import com.sung.demo.democollections.CategoryTAG.CategoryTag;
+import com.sung.demo.democollections.Gyroscope.Gyroscope;
 import com.sung.demo.democollections.IMChat.view.ChatLogin;
+import com.sung.demo.democollections.LiveRadio.SmartPlayer;
 import com.sung.demo.democollections.PcitrueTAG.AddPictruieTag;
 import com.sung.demo.democollections.R;
 import com.sung.demo.democollections.MainActivity.RCView.RcViewAdapter;
 import com.sung.demo.democollections.MainActivity.RCView.RcViewDecoration;
 import com.sung.demo.democollections.ShortVedioRecord.ShortVedioRecord;
-import com.sung.demo.democollections.VideoAndBarrage.VideoPlay;
+import com.sung.demo.democollections.VideoAndBarrage.view.VideoPlay;
 
 /*
 *   demo list
@@ -60,6 +64,18 @@ public class CollectionList extends SungActivity {
                     case 4:
                         startActivity(new Intent(CollectionList.this, ShortVedioRecord.class));
                         break;
+                    case 5:
+                        startActivity(new Intent(CollectionList.this, CalendarSign.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(CollectionList.this, AMapLocation.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(CollectionList.this, Gyroscope.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(CollectionList.this, SmartPlayer.class));
+                        break;
                     default:
                         Toast.makeText(CollectionList.this, data, Toast.LENGTH_SHORT).show();
                         break;
@@ -82,6 +98,10 @@ public class CollectionList extends SungActivity {
                 "VIDEO & BARRAGE",
                 "CATEGORY TAG LIST",
                 "IM CHAT",
-                "SHORT VEDIO RECORD"};
+                "SHORT VEDIO RECORD",
+                "CALENDAR SIGN",
+                "AMAP LOCATION",
+                "GYROSCOPE",
+                "LIVE RADIO"};
     }
 }

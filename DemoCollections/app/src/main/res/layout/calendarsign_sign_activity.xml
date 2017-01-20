@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendarsign_sign_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sung.demo.democollections.CalendarSign.CalendarSign">
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="@dimen/vedio_bottom_actionbar_size"
+        android:textSize="@dimen/xlarge_text"
+        android:textColor="@color/text_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日历签到"/>
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/button_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/calendar_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/list"
+            android:text="calendar list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/calendar_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/scroll"
+            android:text="calendar scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="@dimen/vedio_button_margin"
+            android:text="@string/calendar_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

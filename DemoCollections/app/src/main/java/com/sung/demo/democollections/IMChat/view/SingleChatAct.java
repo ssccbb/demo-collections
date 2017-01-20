@@ -9,7 +9,6 @@ import com.hyphenate.easeui.EaseConstant;
 import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.ui.EaseChatFragment;
 import com.sung.demo.democollections.R;
-import com.sung.demo.democollections.VideoAndBarrage.MediaHelper.MediaHelper;
 
 import java.io.IOException;
 

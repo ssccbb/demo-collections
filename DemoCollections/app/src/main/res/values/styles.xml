@@ -23,4 +23,16 @@
         <item name="android:windowAnimationStyle">@style/AnimationPreview</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+
+
+    <!--calender-->
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/calendar_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>

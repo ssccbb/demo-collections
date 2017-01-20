@@ -1,4 +1,4 @@
-package com.sung.demo.democollections.VideoAndBarrage.MediaHelper;
+package com.sung.demo.democollections.VideoAndBarrage.mediaHelper;
 
 import java.io.File;
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_date"
+        android:layout_width="@dimen/calender_item_text_height"
+        android:layout_height="@dimen/calender_item_text_height"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/calendar_text_color"
+        android:gravity="center"
+        android:text="1" />
+
+    <ImageView
+        android:id="@+id/imv_point"
+        android:layout_width="5dip"
+        android:layout_height="5dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="3dip"/>
+</LinearLayout>

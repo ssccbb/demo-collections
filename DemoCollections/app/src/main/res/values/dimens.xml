@@ -19,4 +19,13 @@
     <dimen name="vedio_button_margin">10dp</dimen>
     <dimen name="vedio_back_size">20dp</dimen>
     <dimen name="vedio_bottom_actionbar_size">30dp</dimen>
+
+
+    <!--calender-->
+    <dimen name="calender_item_height">40dip</dimen>
+    <dimen name="calender_item_text_height">28dip</dimen>
+    <!-- 日期高度为calender_item_height*6 -->
+    <dimen name="calender_height">240dip</dimen>
+    <dimen name="mindistance">10dip</dimen>
+    <dimen name="dip90">90dip</dimen>
 </resources>

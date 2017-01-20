@@ -36,12 +36,12 @@
         "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/record_camera_flash_led_on_disable.png"
     },
     {
-        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/record_camera_flash_led_on_normal.png",
-        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/record_camera_flash_led_on_normal.png"
-    },
-    {
         "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/record_delete_check_press.png",
         "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/record_delete_check_press.png"
+    },
+    {
+        "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/record_camera_flash_led_on_normal.png",
+        "source": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/record_camera_flash_led_on_normal.png"
     },
     {
         "merged": "/Users/sung/AndroidStudioProjects/DemoCollections/SmallVideoLib/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/record_delete_normal.png",
